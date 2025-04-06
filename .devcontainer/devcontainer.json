@@ -21,7 +21,7 @@
       }
     },
     "forwardPorts": [8200],
-    "postCreateCommand": "vault server -dev &", // start Vault in dev mode
+    "postCreateCommand": "vault server -dev -dev-root-token-id=dev-root-token", // start Vault in dev mode
     "remoteEnv": {
       "VAULT_ADDR": "http://127.0.0.1:8200", // Vault server address
       "VAULT_TOKEN": "dev-root-token"        // Development mode token
