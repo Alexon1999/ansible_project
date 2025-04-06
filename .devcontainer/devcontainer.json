@@ -3,7 +3,8 @@
     "image": "mcr.microsoft.com/devcontainers/python:3.10",
     "features": {
       "ghcr.io/devcontainers-extra/features/ansible:2": {},
-      "ghcr.io/hspaans/devcontainer-features/ansible-lint:1": {}
+      "ghcr.io/hspaans/devcontainer-features/ansible-lint:1": {},
+      "ghcr.io/roul/devcontainer-features/vault:1": {}
     },
     "customizations": {
       "vscode": {
