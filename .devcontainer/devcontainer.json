@@ -2,8 +2,8 @@
     "name": "Ansible Dev Env",
     "image": "mcr.microsoft.com/devcontainers/python:3.10",
     "features": {
-      "ghcr.io/devcontainers/features/ansible:1": {},
-      "ghcr.io/devcontainers/features/github-copilot-cli:1": {}
+      "ghcr.io/devcontainers-extra/features/ansible:2": {},
+      "ghcr.io/hspaans/devcontainer-features/ansible-lint:1": {}
     },
     "customizations": {
       "vscode": {
