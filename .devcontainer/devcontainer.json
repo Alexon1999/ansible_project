@@ -1,0 +1,24 @@
+{
+    "name": "Ansible Dev Env",
+    "image": "mcr.microsoft.com/devcontainers/python:3.10",
+    "features": {
+      "ghcr.io/devcontainers/features/ansible:1": {},
+      "ghcr.io/devcontainers/features/github-copilot-cli:1": {}
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "redhat.ansible",
+          "ms-python.python",
+          "github.copilot"
+        ],
+        "settings": {
+          "ansible.ansible.path": "/usr/local/bin/ansible",
+          "ansible.python.interpreterPath": "/usr/local/bin/python",
+          "python.defaultInterpreterPath": "/usr/local/bin/python"
+        }
+      }
+    },
+    "postCreateCommand": "pip install ansible=2.18.4 ansible-lint"
+  }
+  
