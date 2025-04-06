@@ -70,3 +70,9 @@ For staging:
 ```bash
 ansible-playbook -i inventories/staging/inventory playbooks/site.yml
 ```
+
+With Vault Integration
+set environment variables VAULT_ADDR and VAULT_TOKEN
+```bash
+ansible-playbook playbooks/vault.yml
+```

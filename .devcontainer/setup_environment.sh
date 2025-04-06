@@ -4,6 +4,10 @@ ansible-galaxy role install -r roles/requirements.yml
 
 
 # start Vault in dev mode
-pip install hvac
-vault server -dev -dev-root-token-id=dev-root-token
-vault kv put secret/testing password=baz
+# install hvac in Ansible's Python environment
+sudo /usr/local/py-utils/venvs/ansible-core/bin/python -m pip install hvac
+
+# start vault server in dev mode
+vault server -dev -dev-root-token-id=dev-root-token &
+sleep 5
+vault kv put secret/testing db=test password=baz
