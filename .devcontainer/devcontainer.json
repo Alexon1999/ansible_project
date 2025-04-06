@@ -19,6 +19,6 @@
         }
       }
     },
-    "postCreateCommand": "pip install ansible=2.18.4 ansible-lint"
+    "postCreateCommand": "pip install ansible==2.18.4"
   }
   
