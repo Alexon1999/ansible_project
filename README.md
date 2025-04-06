@@ -3,6 +3,7 @@ Recommended way to build ansible project
 
 ## Structure
 
+```bash
 project/
 ├── ansible.cfg
 ├── inventories/
@@ -37,7 +38,7 @@ project/
 │   │   └── vars/
 │   │       └── main.yml
 │   └── requirements.yml
-
+```
 
 - `inventories/`: Contains separate inventories for test, prod, and staging.
 - `playbooks/`: Main playbooks go here.
