@@ -1,0 +1,4 @@
+---
+- name: Print environment
+  debug:
+    msg: "Deploying in environment: {{ env }}"

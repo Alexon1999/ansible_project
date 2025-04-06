@@ -1,0 +1,4 @@
+---
+roles:
+  - src: geerlingguy.nginx
+    version: 0.18.0
