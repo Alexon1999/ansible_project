@@ -1,0 +1,5 @@
+molecule[docker,ansible]
+molecule-docker
+pytest-testinfra
+flake8
+ansible-lint

@@ -70,3 +70,29 @@ For staging:
 ```bash
 ansible-playbook -i inventories/staging/inventory playbooks/site.yml
 ```
+
+## Test Roles with Molecule
+
+Molecule is used for testing Ansible roles. It provides support for testing with multiple instances, operating systems and distributions, virtualization providers, test frameworks and testing scenarios.
+
+Setup
+```bash
+pip install --upgrade pip && pip install -r .devcontainer/requirements.txt
+```
+
+create a scenario inside roles :
+```bash
+cd roles/your_role/
+molecule init scenario [OPTIONS] [SCENARIO_NAME]
+molecule init scenario -d docker default
+```
+
+lauch test :
+```bash
+molecule test
+```
+
+launch commands inside docker container
+```bash
+molecule login -h instance
+```

@@ -1,24 +1,23 @@
 {
-    "name": "Ansible Dev Env",
-    "image": "mcr.microsoft.com/devcontainers/python:3.10",
-    "features": {
-      "ghcr.io/devcontainers-extra/features/ansible:2": {},
-      "ghcr.io/hspaans/devcontainer-features/ansible-lint:1": {}
-    },
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "redhat.ansible",
-          "ms-python.python",
-          "github.copilot"
-        ],
-        "settings": {
-          "ansible.ansible.path": "/usr/local/bin/ansible",
-          "ansible.python.interpreterPath": "/usr/local/bin/python",
-          "python.defaultInterpreterPath": "/usr/local/bin/python"
-        }
+  "name": "Ansible Dev Env",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/ansible:2": {},
+    "ghcr.io/hspaans/devcontainer-features/ansible-lint:2.0.0": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.ansible",
+        "ms-python.python",
+        "github.copilot"
+      ],
+      "settings": {
+        "ansible.ansible.path": "/usr/local/bin/ansible",
+        "ansible.python.interpreterPath": "/usr/local/bin/python",
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
       }
-    },
-    "postCreateCommand": "pip install ansible" //install latest Ansible version
+    }
   }
-  
+}
